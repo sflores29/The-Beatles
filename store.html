@@ -15,9 +15,10 @@
             <!-- <ul> = unordered list -->
             <ul>
                 <!-- <li> = list items, can only be used in <ul> or <ol> -->
-                <li>Home</li>
-                <li>Store</li>
-                <li>About</li>
+                    <!-- add a href to link nav bar -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
         <!-- <hr> is the line that seprates the nav bar and the title. -->
@@ -39,7 +40,7 @@
             <div>
                 <strong>album 1</strong>
             </div>
-            <img src="img/SgtPepper.jpg">
+            <img src="img/SgtPepper.jpg" width="300px">
             <div>
                 <span>$12.99</span>
                 <button role="button">Add to Cart</button>
@@ -49,7 +50,7 @@
             <div>
                 <strong>album 2</strong>
             </div>
-            <img src="img/acrosstheuni.jpg">
+            <img src="img/acrosstheuni.jpg" width="300px">
             <div>
                 <span>$12.99</span>
                 <button role="button">Add to Cart</button>
@@ -59,7 +60,7 @@
             <div>
                 <strong>album 3</strong>
             </div>
-            <img src="img/The_Beatles_1_album_cover.jpg">
+            <img src="img/The_Beatles_1_album_cover.jpg" width="300px">
             <div>
                 <span>$12.99</span>
                 <button role="button">Add to Cart</button>
@@ -69,7 +70,7 @@
             <div>
                 <strong>album 4</strong>
             </div>
-            <img src="img/yellowsub.jpg">
+            <img src="img/yellowsub.jpg" width="300px">
             <div>
                 <span>$12.99</span>
                 <button role="button">Add to Cart</button>
@@ -78,9 +79,78 @@
     </section>
     <section>
         <h2>Merch</h2>
+        <div>
+            <div>
+                <strong>Hoodie</strong>
+            </div>
+            <img src="img/hoodie.jpg" width="300px">
+            <div>
+                <span>$39.99</span>
+                <button role="button">Add to Cart</button>
+            </div>
+            <div>
+                <strong>Lunch Box</strong>
+            </div>
+            <img src="img/lunchBox.jpeg" width="300px">
+            <div>
+                <span>$19.99</span>
+                <button role="button">Add to Cart</button>
+            </div>
+            <div>
+                <strong>T-Shirt</strong>
+            </div>
+            <img src="img/Tshirt.jpg" width="300px">
+            <div>
+                <span>$29.99</span>
+                <button role="button">Add to Cart</button>
+            </div>
+            <div>
+                <strong>Bobble Head</strong>
+            </div>
+            <img src="img/bobble.jpg" width="300px">
+            <div>
+                <span>$19.99</span>
+                <button role="button">Add to Cart</button>
+            </div>
+        </div>
     </section>
     <section>
         <h2>Cart</h2>
+        <div>
+            <strong>Item</strong>
+            &lt;&gt;
+            <strong>Price</strong>
+            &lt;&gt;
+            <strong>Quantity</strong>
+        </div>
+        <div>
+            <img src="img/hoodie.jpg" width="100px">
+            <span>Hoodie</span>
+            &lt;&gt;
+            <span>49.99</span>
+            &lt;&gt;
+            <input type="number" value="1">
+            <button role="button">Remove from Cart</button>
+        </div>
+        <div>
+            <img src="img/bobble.jpg" width="100px">
+            <span>Bobble Heads</span>
+            &lt;&gt;
+            <span>19.99</span>
+            &lt;&gt;
+            <input type="number" value="1">
+            <button role="button">Remove from Cart</button>
+            <hr>
+            <div>
+                <strong>total</strong>
+                <span>$69.98</span>
+                <div>
+                    <button role="button">Purchase</button>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
     <!-- this is the Footer -->
