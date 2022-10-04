@@ -10,9 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="about-header">
+    <header class="main-header">
         <!--  top nav bar -->
-        <nav class="aboutNav">
+        <nav class="nav main-nav">
             <!-- <ul> = unordered list -->
             <ul>
                 <!-- <li> = list items, can only be used in <ul> or <ol> -->
@@ -23,15 +23,16 @@
             </ul>
         </nav>
         <!-- <hr> is the line that seprates the nav bar and the title. -->
-        <hr>
+        <!-- <hr> -->
         <!-- heading element -->
-        <h1>The Beatles
+        <h1 class="band-name band-name-large">The Beatles
         </h1>
     </header>
 
-    <section>
-        <h2> About
+    <section class="content-section container">
+        <h2 class="section-header"> About
         </h2>
+        <img class="about-img" src="./img/abbyRoad.jpg">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
@@ -40,7 +41,6 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
             </p>
-            <img src="./img/abbyRoad.jpg">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis. In illum quasi soluta, velit, magni iste assumenda eum minima deserunt voluptatibus unde, fugit laudantium placeat debitis sit architecto nulla?
@@ -51,10 +51,10 @@
             </p>
     </section>
     <!-- this is the Footer -->
-    <footer>
-
-        <h3>The Beatles</h3>
-        <ul>
+    <footer class="main-footer">
+<div class="container main-footer-container">
+        <h3 class="band-name">The Beatles</h3>
+        <ul class="nav footer-nav">
             <!-- adding target="_blank opens buttons on a new tab" -->
             <li>
                 <a href="https://YouTube.com" target="_blank">
@@ -72,6 +72,7 @@
                 </a>
                 </li>
         </ul>
+    </div>
     </footer>
    
 </body>

@@ -6,36 +6,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <!--  top nav bar -->
-        <nav>
+        <nav class="nav main-nav">
             <!-- <ul> = unordered list -->
             <ul>
                 <!-- <li> = list items, can only be used in <ul> or <ol> -->
-                    <!-- add a href to link nav bar -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="about.html">About</a></li>
+                    <!-- need to make the nav bar function. -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
             </ul>
         </nav>
         <!-- <hr> is the line that seprates the nav bar and the title. -->
-        <hr>
+        <!-- <hr> -->
         <!-- heading element -->
-        <h1>The Beatles
+        <h1 class="band-name band-name-large">The Beatles
         </h1>
-        
-        <button type="button"> Get our latest album</button>
-        <br>
-        <br>
-        <!-- TODO Find a background img. -->
-        <!-- playbutton entitiy -->
-        <button type="button">&#9658 </button>
     </header>
     <section>
-        <h2>Music</h2>
+        <h2 class="section-header">Music</h2>
         <div>
             <div>
                 <strong>album 1</strong>
@@ -154,27 +148,29 @@
     </section>
 
     <!-- this is the Footer -->
-    <footer>
-
-        <h3>The Beatles</h3>
-        <ul>
-            <li>
-                <a href="https://YouTube.com" target="_blank">
-                    <img src="img/YouTube Logo.png">
-                </a>
-                </li>
-               <li>
-                <a href="https://Spotify.com" target="_blank">
-                    <img src="img/Spotify Logo.png " >
-                </a>
-                </li>
-               <li>
-                <a href="https://Facebook.com" target="_blank">
-                    <img src="img/Facebook Logo.png">
-                </a>
-                </li>
-        </ul>
-    </footer>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+                <h3 class="band-name">The Beatles</h3>
+                <ul class="nav footer-nav">
+                    <!-- adding target="_blank opens buttons on a new tab" -->
+                    <li>
+                        <a href="https://YouTube.com" target="_blank">
+                            <img src="img/YouTube Logo.png">
+                        </a>
+                        </li>
+                       <li>
+                        <a href="https://Spotify.com" target="_blank">
+                            <img src="img/Spotify Logo.png " >
+                        </a>
+                        </li>
+                       <li>
+                        <a href="https://Facebook.com" target="_blank">
+                            <img src="img/Facebook Logo.png">
+                        </a>
+                        </li>
+                </ul>
+            </div>
+            </footer>
    
 </body>
 </html>

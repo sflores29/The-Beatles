@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <!--  top nav bar -->
-        <nav>
+        <nav class="nav main-nav"> 
             <!-- <ul> = unordered list -->
             <ul>
                 <!-- <li> = list items, can only be used in <ul> or <ol> -->
@@ -23,85 +24,79 @@
         <!-- <hr> is the line that seprates the nav bar and the title. -->
         <hr>
         <!-- heading element -->
-        <h1>The Beatles
+        <h1 class="band-name band-name-large"> The Beatles
         </h1>
-        
-        <button type="button"> Get our latest album</button>
-        <br>
-        <br>
-        <!-- TODO Find a background img. -->
+        <div class="container">
+        <button class= "btn btn-header"  type="button"> Get our latest album</button>
+    </div>
         <!-- playbutton entitiy -->
-        <button type="button">&#9658 </button>
+        <button class="btn btn-header btn-play" type="button">&#9658 </button>
     </header>
-    <section>
-        <h2>Tours</h2>
+    <section class="content-section container">
+        <h2 class="section-header">Tours</h2>
         <!-- outside div is the entire block -->
         <div>
             <!-- inside div is the single row-->
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
-                <hr>
+            <!-- add in actual dates? JS? -->
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary">Buy Tickets</button>
+                
             </div>
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary" >Buy Tickets</button>
+                
             </div>
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary" >Buy Tickets</button>
+                
             </div>
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary">Buy Tickets</button>
+                
             </div>
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
-                <hr>
+            
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary" >Buy Tickets</button>
+                
             </div>
-            <div>
-                <strong>July 16</strong>
-                &lt;&gt;
-                <span>Detroit, Mi</span>
-                &lt;&gt;
-                <span>DTE Energy Music Theatre</span>
-                &lt;&gt;
-                <button type="button">Buy Tickets</button>
-                &lt;&gt;
+            <div class="tour-row">
+                <span class="tour-item tour-date">July 16</span>
+                
+                <span class="tour-item tour-city">Detroit, Mi</span>
+                
+                <span class="tour-item tour-venue">DTE Energy Music Theatre</span>
+                
+                <button  type="button" class="btn-tour-item tour-btn btn-primary" >Buy Tickets</button>
                 
             </div>
                 
@@ -110,27 +105,29 @@
     </section>
 
     <!-- this is the Footer -->
-    <footer>
-
-        <h3>The Beatles</h3>
-        <ul>
-            <li>
-                <a href="https://YouTube.com" target="_blank">
-                    <img src="img/YouTube Logo.png">
-                </a>
-                </li>
-               <li>
-                <a href="https://Spotify.com" target="_blank">
-                    <img src="img/Spotify Logo.png " >
-                </a>
-                </li>
-               <li>
-                <a href="https://Facebook.com" target="_blank">
-                    <img src="img/Facebook Logo.png">
-                </a>
-                </li>
-        </ul>
-    </footer>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+                <h3 class="band-name">The Beatles</h3>
+                <ul class="nav footer-nav">
+                    <!-- adding target="_blank opens buttons on a new tab" -->
+                    <li>
+                        <a href="https://YouTube.com" target="_blank">
+                            <img src="img/YouTube Logo.png">
+                        </a>
+                        </li>
+                       <li>
+                        <a href="https://Spotify.com" target="_blank">
+                            <img src="img/Spotify Logo.png " >
+                        </a>
+                        </li>
+                       <li>
+                        <a href="https://Facebook.com" target="_blank">
+                            <img src="img/Facebook Logo.png">
+                        </a>
+                        </li>
+                </ul>
+            </div>
+            </footer>
    
 </body>
 </html>
